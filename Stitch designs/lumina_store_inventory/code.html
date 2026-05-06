@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LUMINA Store - Premium Electronics</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "outline-variant": "#c1c6d6",
+                    "on-error": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-container": "#fcfbff",
+                    "tertiary-fixed": "#ffdbcb",
+                    "surface-variant": "#e4e2e4",
+                    "surface-container-highest": "#e4e2e4",
+                    "on-primary-fixed": "#001b3f",
+                    "surface-dim": "#dcd9dc",
+                    "on-tertiary-fixed-variant": "#7a3000",
+                    "on-primary-fixed-variant": "#00458f",
+                    "on-surface": "#1b1b1d",
+                    "on-secondary": "#ffffff",
+                    "surface": "#fcf8fb",
+                    "inverse-surface": "#303032",
+                    "secondary": "#5e5e63",
+                    "on-error-container": "#93000a",
+                    "surface-container": "#f0edef",
+                    "outline": "#717785",
+                    "inverse-on-surface": "#f3f0f2",
+                    "inverse-primary": "#abc7ff",
+                    "secondary-fixed-dim": "#c7c6cb",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed-variant": "#46464b",
+                    "on-surface-variant": "#414753",
+                    "tertiary-container": "#c25100",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-low": "#f6f3f5",
+                    "surface-container-high": "#eae7ea",
+                    "surface-bright": "#fcf8fb",
+                    "on-tertiary-container": "#fffaf9",
+                    "secondary-fixed": "#e3e2e7",
+                    "primary": "#0059b5",
+                    "background": "#fcf8fb",
+                    "on-tertiary-fixed": "#341000",
+                    "secondary-container": "#e0dfe4",
+                    "on-primary": "#ffffff",
+                    "primary-fixed": "#d7e2ff",
+                    "tertiary-fixed-dim": "#ffb693",
+                    "primary-fixed-dim": "#abc7ff",
+                    "on-secondary-fixed": "#1a1b1f",
+                    "surface-tint": "#005cbb",
+                    "error": "#ba1a1a",
+                    "tertiary": "#9b3f00",
+                    "on-secondary-container": "#626267",
+                    "on-background": "#1b1b1d",
+                    "primary-container": "#0071e3"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "xs": "8px",
+                    "xl": "64px",
+                    "md": "24px",
+                    "lg": "40px",
+                    "gutter": "20px",
+                    "sm": "16px",
+                    "container-max": "1200px",
+                    "unit": "4px"
+            },
+            "fontFamily": {
+                    "h1": ["Inter"],
+                    "display": ["Inter"],
+                    "label-md": ["Inter"],
+                    "caption": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "h3": ["Inter"],
+                    "h2": ["Inter"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "h1": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "display": ["56px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                    "caption": ["12px", {"lineHeight": "1.2", "letterSpacing": "0", "fontWeight": "400"}],
+                    "body-lg": ["19px", {"lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400"}],
+                    "h3": ["24px", {"lineHeight": "1.3", "letterSpacing": "0", "fontWeight": "600"}],
+                    "h2": ["32px", {"lineHeight": "1.25", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "body-md": ["17px", {"lineHeight": "1.47", "letterSpacing": "0", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        .premium-hover:hover {
+            transform: scale(1.02);
+            box-shadow: 0px 10px 30px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopAppBar Section -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 shadow-sm">
+<div class="max-w-container-max mx-auto px-gutter flex items-center justify-between h-16">
+<div class="flex items-center gap-lg">
+<span class="font-display text-h3 font-bold tracking-tighter text-on-surface">LUMINA</span>
+<nav class="hidden md:flex items-center gap-md">
+<a class="text-primary border-b-2 border-primary pb-1 font-body-md text-body-md" href="#">Store</a>
+<a class="text-on-surface-variant font-medium font-body-md text-body-md hover:text-primary transition-colors duration-200" href="#">TVs</a>
+<a class="text-on-surface-variant font-medium font-body-md text-body-md hover:text-primary transition-colors duration-200" href="#">Audio</a>
+<a class="text-on-surface-variant font-medium font-body-md text-body-md hover:text-primary transition-colors duration-200" href="#">Mobile</a>
+<a class="text-on-surface-variant font-medium font-body-md text-body-md hover:text-primary transition-colors duration-200" href="#">Computing</a>
+</nav>
+</div>
+<div class="flex items-center gap-md">
+<div class="relative hidden sm:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+<input class="pl-10 pr-4 py-2 bg-surface-container border border-outline-variant/50 rounded-full text-body-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary w-64 transition-all" placeholder="Search products" type="text"/>
+</div>
+<div class="flex items-center gap-sm">
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined">shopping_cart</span></button>
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined">person</span></button>
+</div>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-xl">
+<!-- Hero Title Section -->
+<section class="max-w-container-max mx-auto px-gutter mb-xl">
+<h1 class="font-display text-display text-on-surface mb-xs">Store.</h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-2xl">Discover precision-engineered electronics designed to elevate your digital lifestyle. Experience the LUMINA difference.</p>
+</section>
+<!-- Categories Bento / Chips -->
+<section class="max-w-container-max mx-auto px-gutter mb-lg">
+<div class="flex flex-wrap gap-sm">
+<button class="px-md py-xs rounded-full bg-on-surface text-surface font-label-md text-label-md">All Products</button>
+<button class="px-md py-xs rounded-full bg-surface-container-low border border-outline-variant/30 text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high transition-colors">TV</button>
+<button class="px-md py-xs rounded-full bg-surface-container-low border border-outline-variant/30 text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high transition-colors">HP</button>
+<button class="px-md py-xs rounded-full bg-surface-container-low border border-outline-variant/30 text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high transition-colors">PHONES</button>
+<button class="px-md py-xs rounded-full bg-surface-container-low border border-outline-variant/30 text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high transition-colors">IPADS</button>
+<button class="px-md py-xs rounded-full bg-surface-container-low border border-outline-variant/30 text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high transition-colors">ACCESSORIES</button>
+</div>
+</section>
+<!-- Product Grid -->
+<section class="max-w-container-max mx-auto px-gutter">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-md">
+<!-- Card 1 -->
+<div class="premium-hover group bg-surface-container-lowest border border-outline-variant/20 rounded-xl overflow-hidden transition-all duration-300">
+<div class="aspect-square relative overflow-hidden bg-[#F5F5F7]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A high-end ultra-thin OLED television screen displaying vibrant cinematic colors in a minimalist modern living room. The lighting is soft and ambient, emphasizing the razor-sharp bezel-less design and deep blacks of the screen. The scene is shot in a bright, clean light-mode aesthetic with a palette of soft greys and whites, creating a premium and technologically advanced mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJOYpxDwCM2BVspbQfFCed0oSxBHC1UBqTTGJsN6U3YH2JoWYM9uK_0wSlQDljML9shdMyrH6Lcn2h8CNGpw2yTyJVp1-pS0qcuu308k9uPSQn-ng3MdNIcIUQp1hHSaUX9EiPrHNlQEwZ7HSDA2dkO3tWg46GtutaQCZbHx3nyqXJmJJq0cy8bVo9YgREB-pos_WATX84M-ol3e9-tqZcLAC4AHvsW7ln_QLJ6T5wYbGz31Qk1AmNIlzRR_bl6ld25Q4Ac7rg0W2q"/>
+</div>
+<div class="p-md">
+<span class="font-caption text-caption text-secondary uppercase tracking-wider mb-unit block">TV</span>
+<h3 class="font-h3 text-h3 text-on-surface mb-xs">LUMINA OLED 8K</h3>
+<p class="font-body-md text-body-md text-secondary mb-md">$3,499.00</p>
+<button class="w-full py-2 bg-primary text-on-primary rounded-lg font-label-md text-label-md hover:bg-primary-container transition-colors">Buy Now</button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="premium-hover group bg-surface-container-lowest border border-outline-variant/20 rounded-xl overflow-hidden transition-all duration-300">
+<div class="aspect-square relative overflow-hidden bg-[#F5F5F7]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Premium professional studio headphones with polished metallic finishes and leather padding resting on a white marble surface. The lighting is high-key and diffused, highlighting the machined precision and elegant curves of the device. The visual style is strictly corporate and modern, using a color palette of silver, deep black, and bright white to evoke a sense of high-fidelity audio excellence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY4UZzRcjBiMpbflOuX1V77zRuE60VVT1My9sJZ2A6Y2xz6UekTuZbUalHmK5pwo8Q3DQZ_zxA7g3fKssWRfECvv4o4ONxwtb6jWlKHbNaUnYyZr_qAP4gYH5CHiV794bnPN3cchSPzm98S3_aDSkgKOLcUHujPc2C3t45ftWKN9IE3F97LtqKBkjfoFEzTuUqPg4yWAfrFVek2YPEsx5F34h8gdLuQv-UUol9gHnC7NZjcEIUSqN1nWajMpOtvgkmRivDWbuVpmf9"/>
+</div>
+<div class="p-md">
+<span class="font-caption text-caption text-secondary uppercase tracking-wider mb-unit block">HP</span>
+<h3 class="font-h3 text-h3 text-on-surface mb-xs">Sonic Pro Wireless</h3>
+<p class="font-body-md text-body-md text-secondary mb-md">$449.00</p>
+<button class="w-full py-2 bg-primary text-on-primary rounded-lg font-label-md text-label-md hover:bg-primary-container transition-colors">Buy Now</button>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="premium-hover group bg-surface-container-lowest border border-outline-variant/20 rounded-xl overflow-hidden transition-all duration-300">
+<div class="aspect-square relative overflow-hidden bg-[#F5F5F7]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A sleek flagship smartphone with a titanium frame and a vibrant edge-to-edge glass display. It is placed on a minimalist designer desk in a bright, airy office space. The image features a shallow depth of field and soft natural light, emphasizing the premium build quality and sophisticated design. The color palette is composed of metallic shades and pristine whites." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_ZyTDQATP0AolG_aG4WBTtDYGDw3KL9TjpLhSvTD1buj97fPdaR8U8zWUSPA5lFacyNbpy0RFzwSLOmBuwWP8-9c8Q9l460kKkwJ8Uq_pZ9jHK5CuEHK2xZ39Dira3pDU0jRtqZoqr9fM90NX4Mau5zE2vRTWgQDJX62OYrKMFDDWaCNQRbd_Kv5ZmKwUc0hNzHrIZUU9QBOprCaIGBfQit1OVRWLwSDDM4T9rtbxPh0RnevAqUOC87Ey3YeHYJnm4Me91jEVh8IX"/>
+</div>
+<div class="p-md">
+<span class="font-caption text-caption text-secondary uppercase tracking-wider mb-unit block">PHONES</span>
+<h3 class="font-h3 text-h3 text-on-surface mb-xs">LUMINA Prime X</h3>
+<p class="font-body-md text-body-md text-secondary mb-md">$1,199.00</p>
+<button class="w-full py-2 bg-primary text-on-primary rounded-lg font-label-md text-label-md hover:bg-primary-container transition-colors">Buy Now</button>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="premium-hover group bg-surface-container-lowest border border-outline-variant/20 rounded-xl overflow-hidden transition-all duration-300">
+<div class="aspect-square relative overflow-hidden bg-[#F5F5F7]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A high-performance professional tablet with a stylus resting on its screen, showcasing a detailed architectural drawing. The setting is a clean, modern creative studio with bright lighting and expansive white space. The aesthetic is minimal and professional, focusing on the precision of the stylus and the clarity of the high-resolution display, rendered in a palette of cool greys and pure whites." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxRi8Jj1v0wb9fM7PAKpNRF59O8jtBdTDTyqT00TxaTQb6ybu62d2SjtWtyebsYMYtk9qQSvr2uVENWFzQU1EBg0FphKqmXkpaFhbukXzKaDzLqEDuchMEof9NGADWdBro0mLPBmcTXlR3iJoBFM8Tw_l8qdiPsbNAUgaOCCKW5nyhuwL6wrIkXPuLuuQq7ie1OjnKtn98qC8RDP2C4K6x7DXTSc2_gs2g8wFYucVNTxUZUUMW9tC3pBaII9Eky_9POITTtDPk7Old"/>
+</div>
+<div class="p-md">
+<span class="font-caption text-caption text-secondary uppercase tracking-wider mb-unit block">IPADS</span>
+<h3 class="font-h3 text-h3 text-on-surface mb-xs">Studio Tab 12</h3>
+<p class="font-body-md text-body-md text-secondary mb-md">$899.00</p>
+<button class="w-full py-2 bg-primary text-on-primary rounded-lg font-label-md text-label-md hover:bg-primary-container transition-colors">Buy Now</button>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="premium-hover group bg-surface-container-lowest border border-outline-variant/20 rounded-xl overflow-hidden transition-all duration-300">
+<div class="aspect-square relative overflow-hidden bg-[#F5F5F7]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A powerful laptop with a machined aluminum chassis open on a minimal white desk. The keyboard is backlit with a soft white glow, and the screen displays a complex coding environment. The lighting is crisp and cool, creating a mood of productivity and sophisticated engineering. The scene is set in a high-fidelity minimalist room with large windows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-Sm7M0eIlmoAMTTxqQnR3jnsUEVchPyED79tdJO0-k8ibQrmK39jnRKEj1dRYs6QGzZDCO3qDTQbiVqc9S7A40JQxsWSVHApmHkvELetl5k7MjcZ3OVyq1SeGFRUjFA_37hFkgrpDBsqVpvk2-Jy864oXpHexY1QPwaiHuwWeOPwoOrMOe64KoQfWfaGttai7lF1NMgdC2Z6ooMxkHqYEdgxWqWXa-sh3sE93ojAoAFzeJ8rNZKAIfqMkPn_leufGRvIWX8eMvic7"/>
+</div>
+<div class="p-md">
+<span class="font-caption text-caption text-secondary uppercase tracking-wider mb-unit block">COMPUTING</span>
+<h3 class="font-h3 text-h3 text-on-surface mb-xs">LUMINA Book Ultra</h3>
+<p class="font-body-md text-body-md text-secondary mb-md">$1,999.00</p>
+<button class="w-full py-2 bg-primary text-on-primary rounded-lg font-label-md text-label-md hover:bg-primary-container transition-colors">Buy Now</button>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="premium-hover group bg-surface-container-lowest border border-outline-variant/20 rounded-xl overflow-hidden transition-all duration-300">
+<div class="aspect-square relative overflow-hidden bg-[#F5F5F7]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A professional smartwatch with a sapphire glass face and a sleek metallic band displayed in a luxury presentation box. The lighting is bright and focused, highlighting the premium craftsmanship and intricate digital interface. The aesthetic is clean, corporate, and highly modern, using a color palette of deep blacks, brushed steel, and bright white highlights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDy4nRkSbhn6AD0UemyLXEm6OuGxhUCT0be4WVPCoYMXsTJrmWf4CuBJsskQClQDdwSLJfGmtYl8RjaF71Cait56G18Yh1mV00E_mmqKbQOrazrDVCpWMEW4_ffLhgvMZVg5nPKrjjkHusTs-LpCsk2FRQhG3xtxY6QZHN5vTH4z3kIcy6227BWnW4E19PLfCLpD-yk4K6mTYfDcJJ1jnOHuejCBPPivdTSNXFe5u0-KCVbCvu1yLeBLbrA9Oe2EuuNt-wYv4iGUGHl"/>
+</div>
+<div class="p-md">
+<span class="font-caption text-caption text-secondary uppercase tracking-wider mb-unit block">ACCESSORIES</span>
+<h3 class="font-h3 text-h3 text-on-surface mb-xs">LUMINA Watch S</h3>
+<p class="font-body-md text-body-md text-secondary mb-md">$399.00</p>
+<button class="w-full py-2 bg-primary text-on-primary rounded-lg font-label-md text-label-md hover:bg-primary-container transition-colors">Buy Now</button>
+</div>
+</div>
+<!-- Card 7 -->
+<div class="premium-hover group bg-surface-container-lowest border border-outline-variant/20 rounded-xl overflow-hidden transition-all duration-300">
+<div class="aspect-square relative overflow-hidden bg-[#F5F5F7]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="An array of high-quality premium audio accessories including silver connectors and braided cables arranged neatly on a clean grey surface. The lighting is soft and even, emphasizing the high-fidelity materials and precision manufacturing. The scene reflects a California Modern aesthetic with plenty of negative space and a sophisticated, neutral color palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzc3Kbfdb9rDpf9kFut9pHxkARznvEcAMgYnereVmtSvPmUwopuk774ZWCDjhD2DNsVBbQq1edBVNyzo5MNsR5B8C2VgNbvMM-LIzPvP0uYt9LAHz2eSf-h0nMmrDYLA3IKEs9McU1Z1fEG9UYRq3gtUVbn9--K7JufNJeetQ7uCaNMFuyxuWMOx0crijJc59Yk1zjsqTMmDHUw7JrUgpnM7Fno6q4-y1nJ59l_ucFyOEoxmid5KKSmQv84_InAgUEQpIrIz_Dy1hJ"/>
+</div>
+<div class="p-md">
+<span class="font-caption text-caption text-secondary uppercase tracking-wider mb-unit block">AUDIO</span>
+<h3 class="font-h3 text-h3 text-on-surface mb-xs">Soundbar Arc 2</h3>
+<p class="font-body-md text-body-md text-secondary mb-md">$799.00</p>
+<button class="w-full py-2 bg-primary text-on-primary rounded-lg font-label-md text-label-md hover:bg-primary-container transition-colors">Buy Now</button>
+</div>
+</div>
+<!-- Card 8 -->
+<div class="premium-hover group bg-surface-container-lowest border border-outline-variant/20 rounded-xl overflow-hidden transition-all duration-300">
+<div class="aspect-square relative overflow-hidden bg-[#F5F5F7]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A minimalist professional gaming mouse with an ergonomic design and subtle RGB lighting accents on a premium desk pad. The environment is clean and modern with a high-key light mode aesthetic. The photography focuses on the smooth textures and sharp lines of the device, using a palette of white, silver, and soft blues to create an aura of precision and performance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6Armz9AISMf-YOoFpTzEPErOvZjSBA2UrMyyok37BACj5CbRgaru4J1wKpsDkNaUo2Y8t7c40p-V6e5y-67gtMkWrlW4-SxhZmGfQEx0ubLSuKTCYYdomUxGAkKZiRWlA2-JNByMT6gtqnviQkjVMipMOA8OcSmIwnP6T2nbltNvTCMwttzIlPrSYnBfcwCKKJYenHiY6oON18jdmkqDQyb_81zhyumNMm2VsH_JlFaf6Q3qfD6DbZgE3WWzoke_hsfxw7SIaHeF_"/>
+</div>
+<div class="p-md">
+<span class="font-caption text-caption text-secondary uppercase tracking-wider mb-unit block">ACCESSORIES</span>
+<h3 class="font-h3 text-h3 text-on-surface mb-xs">Precision Mouse Pro</h3>
+<p class="font-body-md text-body-md text-secondary mb-md">$129.00</p>
+<button class="w-full py-2 bg-primary text-on-primary rounded-lg font-label-md text-label-md hover:bg-primary-container transition-colors">Buy Now</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Section -->
+<footer class="w-full py-xl mt-xl bg-surface-container-low border-t border-outline-variant/20">
+<div class="max-w-container-max mx-auto px-gutter flex flex-col md:flex-row justify-between items-center gap-md">
+<div class="flex flex-col gap-xs items-center md:items-start">
+<span class="font-display text-h3 font-bold text-on-surface">LUMINA</span>
+<p class="font-caption text-caption text-on-surface-variant text-center md:text-left">© 2024 LUMINA Electronics. Precision Engineering.</p>
+</div>
+<div class="flex gap-lg">
+<a class="font-caption text-caption text-on-surface-variant hover:text-primary underline-offset-4 hover:underline transition-all duration-300" href="#">Privacy</a>
+<a class="font-caption text-caption text-on-surface-variant hover:text-primary underline-offset-4 hover:underline transition-all duration-300" href="#">Terms</a>
+<a class="font-caption text-caption text-on-surface-variant hover:text-primary underline-offset-4 hover:underline transition-all duration-300" href="#">Support</a>
+<a class="font-caption text-caption text-on-surface-variant hover:text-primary underline-offset-4 hover:underline transition-all duration-300" href="#">Locations</a>
+</div>
+</div>
+</footer>
+</body></html>

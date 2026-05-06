@@ -104,11 +104,19 @@ def logout():
     return resp, 200
 
 @auth_bp.route('/me', methods=['GET'])
-@jwt_required()
+@jwt_required(optional=True)
 def me():
     current_user_id = get_jwt_identity()
+    
+    if not current_user_id:
+        return jsonify({"user": None}), 200
+
+    conn = get_db_connection()
+    if conn is None:
+        # Mock user for template development if no DB is connected
+        return jsonify({"user": {"id": 1, "email": "mock@example.com", "role": "ADMIN"}}), 200
+
     try:
-        conn = get_db_connection()
         cur = conn.cursor(cursor_factory=RealDictCursor)
         cur.execute("SELECT id, email, role FROM users WHERE id = %s", (current_user_id,))
         user = cur.fetchone()
