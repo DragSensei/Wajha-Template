@@ -25,22 +25,22 @@ export default function PublicStore() {
           
           <div className="hidden md:flex gap-8 items-center">
             <div className="relative group">
-              <a className="text-on-surface/70 font-label-md hover:text-primary transition-colors duration-300 flex items-center gap-1" href="#">Store<span className="material-symbols-outlined text-[14px]">expand_more</span></a>
+              <Link className="text-on-surface/70 font-label-md hover:text-primary transition-colors duration-300 flex items-center gap-1" to="/store">Store<span className="material-symbols-outlined text-[14px]">expand_more</span></Link>
             </div>
             <div className="relative group">
-              <a className="text-on-surface/70 font-label-md hover:text-primary transition-colors duration-300 flex items-center gap-1" href="#">TV<span className="material-symbols-outlined text-[14px]">expand_more</span></a>
+              <Link className="text-on-surface/70 font-label-md hover:text-primary transition-colors duration-300 flex items-center gap-1" to="/store">TV<span className="material-symbols-outlined text-[14px]">expand_more</span></Link>
             </div>
             <div className="relative group">
-              <a className="text-on-surface/70 font-label-md hover:text-primary transition-colors duration-300 flex items-center gap-1" href="#">HP<span className="material-symbols-outlined text-[14px]">expand_more</span></a>
+              <Link className="text-on-surface/70 font-label-md hover:text-primary transition-colors duration-300 flex items-center gap-1" to="/store">HP<span className="material-symbols-outlined text-[14px]">expand_more</span></Link>
             </div>
             <div className="relative group">
-              <a className="text-on-surface/70 font-label-md hover:text-primary transition-colors duration-300 flex items-center gap-1" href="#">PHONES<span className="material-symbols-outlined text-[14px]">expand_more</span></a>
+              <Link className="text-on-surface/70 font-label-md hover:text-primary transition-colors duration-300 flex items-center gap-1" to="/store">PHONES<span className="material-symbols-outlined text-[14px]">expand_more</span></Link>
             </div>
             <div className="relative group">
-              <a className="text-on-surface/70 font-label-md hover:text-primary transition-colors duration-300 flex items-center gap-1" href="#">IPADS<span className="material-symbols-outlined text-[14px]">expand_more</span></a>
+              <Link className="text-on-surface/70 font-label-md hover:text-primary transition-colors duration-300 flex items-center gap-1" to="/store">IPADS<span className="material-symbols-outlined text-[14px]">expand_more</span></Link>
             </div>
             <div className="relative group">
-              <a className="text-on-surface/70 font-label-md hover:text-primary transition-colors duration-300 flex items-center gap-1" href="#">ACCESSORIES<span className="material-symbols-outlined text-[14px]">expand_more</span></a>
+              <Link className="text-on-surface/70 font-label-md hover:text-primary transition-colors duration-300 flex items-center gap-1" to="/store">ACCESSORIES<span className="material-symbols-outlined text-[14px]">expand_more</span></Link>
             </div>
           </div>
           

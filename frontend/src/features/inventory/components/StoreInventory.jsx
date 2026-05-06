@@ -37,10 +37,10 @@ export default function StoreInventory() {
             <Link to="/" className="font-display text-h3 font-bold tracking-tighter text-on-surface">LUMINA</Link>
             <nav className="hidden md:flex items-center gap-md">
               <Link to="/store" className="text-primary border-b-2 border-primary pb-1 font-body-md text-body-md">Store</Link>
-              <a className="text-on-surface-variant font-medium font-body-md text-body-md hover:text-primary transition-colors duration-200" href="#">TVs</a>
-              <a className="text-on-surface-variant font-medium font-body-md text-body-md hover:text-primary transition-colors duration-200" href="#">Audio</a>
-              <a className="text-on-surface-variant font-medium font-body-md text-body-md hover:text-primary transition-colors duration-200" href="#">Mobile</a>
-              <a className="text-on-surface-variant font-medium font-body-md text-body-md hover:text-primary transition-colors duration-200" href="#">Computing</a>
+              <Link to="/store" className="text-on-surface-variant font-medium font-body-md text-body-md hover:text-primary transition-colors duration-200">TVs</Link>
+              <Link to="/store" className="text-on-surface-variant font-medium font-body-md text-body-md hover:text-primary transition-colors duration-200">Audio</Link>
+              <Link to="/store" className="text-on-surface-variant font-medium font-body-md text-body-md hover:text-primary transition-colors duration-200">Mobile</Link>
+              <Link to="/store" className="text-on-surface-variant font-medium font-body-md text-body-md hover:text-primary transition-colors duration-200">Computing</Link>
             </nav>
           </div>
           <div className="flex items-center gap-md">
