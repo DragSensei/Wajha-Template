@@ -14,8 +14,12 @@ def create_app():
 
     from app.features.auth.routes import auth_bp
     from app.features.admin.routes import admin_bp
+    from app.features.inventory.routes import inventory_bp
+    from app.features.orders.routes import orders_bp
     
     app.register_blueprint(auth_bp, url_prefix='/api/auth')
     app.register_blueprint(admin_bp, url_prefix='/api/admin')
+    app.register_blueprint(inventory_bp, url_prefix='/api/inventory')
+    app.register_blueprint(orders_bp, url_prefix='/api/orders')
 
     return app

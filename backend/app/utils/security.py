@@ -18,7 +18,14 @@ def verify_password(password: str, hashed_password: str) -> bool:
 
 def get_db_connection():
     conn_string = os.environ.get('DATABASE_URL')
-    return psycopg2.connect(conn_string)
+    if not conn_string:
+        print("WARNING: DATABASE_URL not set. Using mock connection.")
+        return None # In a real scenario, raise an error. Here we return None to let the mock routes handle it.
+    try:
+        return psycopg2.connect(conn_string)
+    except psycopg2.Error as e:
+        print(f"ERROR: Database connection failed: {e}")
+        return None
 
 def admin_required():
     def wrapper(fn):
